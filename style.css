@@ -1,0 +1,67 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pet {
+    height: 80px;
+    width: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.head, .body, .left-leg, .right-leg {
+    background-color: green;
+}
+
+.head {
+    width: 40%;
+    height: 20px;
+
+    border-radius: 100%;
+
+    transition: background-color 1s;
+}
+
+.head:hover {
+    background-color: brown;
+}
+
+.body {
+    width: 80%;
+    height: 40px;
+}
+
+.legs {
+    width: 80%;
+    height: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-leg, .right-leg {
+    width: 15%;
+    height: 100%;
+}
+
+.at-work {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    transition: right 1s ease-in-out;
+}
+
+.at-work2 {
+    right: 100px;
+}
+
+.hungry {
+    background-color: yellow;
+}
